@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="gh.css">
+</head>
+<body>
+    <div style="position: relative;
+    right: : 50px;
+    position: relative;
+    right: -30%;">
+<form name="calc" action="">
+     <table class="tblCalc" >
+     <tr>
+         <td colspan=5 align=middle>
+            <input id="editWide" name="ReadOut">
+         </td>
+     </tr>
+     <tr>
+         <td colspan="3"></td>
+         <div style="display: flex;">
+         <td><input style="background-color: yellow;" class="b" name="btnClear" type="Button"
+            value="C" onclick="Clear()" /></td>
+         <td><input style="background-color: yellow; padding: 2px;" class="b" name="btnClearEntry" type="Button"
+            value="CE" onclick="ClearEntry()" /></td>
+
+        </div>
+     </tr>
+     <tr>
+        <div style="display: flex;">
+         <td><input class="b" name="btnSeven" type="Button"
+            value="7" onclick="NumPressed(7)"></td>
+         <td><input class="b" name="btnEight" type="Button"
+            value="8" onclick="NumPressed(8)"></td>
+         <td><input class="b" name="btnNine" type="Button"
+            value="9" onclick="NumPressed(9)"></td>
+         <td><input style="background-color: orange;" class="b" name="btnPlus" type="Button"
+            value="+" onclick="Operation('+')" /></td>
+         <td><input style="background-color:orange" class="b" name="btnMultiply" type="Button"
+            value="*" onclick="Operation('*')"/></td>
+       </div>
+       </tr>
+     <tr>
+        <div style="display: flex;">
+         <td><input class="b" name="btnFour" type="Button"
+            value="4" onclick="NumPressed(4)"></td>
+         <td><input class="b" name="btnFive" type="Button"
+            value="5" onclick="NumPressed(5)"></td>
+         <td><input class="b" class="b" name="btnSix" type="Button"
+            value="6" onclick="NumPressed(6)"></td>
+         <td><input style="background-color: orange;" class="b" name="btnMinus" type="Button"
+            value="-" onclick="Operation('-')" /></td>
+         <td><input style="background-color: orange;" class="b" name="btnDevide" type="Button"
+            value="/" onclick="Operation('/')" /></td>
+     </div>
+     </tr>
+     <tr>
+         <td><input class="b" name="btnOne" type="Button"
+            value="1" onclick="NumPressed(1)"></td>
+         <td><input class="b" name="btnTwo" type="Button"
+            value="2" onclick="NumPressed(2)"></td>
+         <td><input class="b" name="btnThree" type="Button"
+            value="3" onclick="NumPressed(3)"></td>
+         <td><input style="background-color: orange;" class="b" name="btnPercent" type="Button"
+            value="%" onclick="Percent()" /></td>
+         <td align=middle>&nbsp;</td>
+     </tr>
+     <tr>
+         <td><input class="b" name="btnZero" type="Button"
+            value="0" onclick="NumPressed(0)"></td>
+         <td><input class="b" name="btnDecimal" type="Button"
+            value="." onclick="Decimal()"></td>
+         <td><input style="background-color: orange;" class="b" name="btnNeg" type="button"
+            value="+/-" onclick="Neg()" /></td>
+         <td colspan="2"><input style="background-color: orange;" class="b" id="btnWide" name="btnEquals"
+            type="Button" value="=" onclick="Operation('=')"></td>
+     </tr>
+     </table>
+</form>
+</div>
+<script src="gh.js"></script>
+</body>
+</html>
+
