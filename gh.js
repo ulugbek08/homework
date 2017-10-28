@@ -1,8 +1,9 @@
- 
 var Fcalc = document.calc;
 var Currents = 0;
 var FlagNewNum = false;
 var PendingOp = "";
+
+
 
 function NumPressed (Num) 
 {
@@ -19,7 +20,6 @@ function NumPressed (Num)
 				Fcalc.ReadOut.value += Num;
 		}
 }
-	
 
 function Operation (Op) 
 {
@@ -54,7 +54,6 @@ function Decimal ()
 		{
 			curReadOut = "0.";
 			FlagNewNum = false;
-			
 		}
 		else
 		{
@@ -89,10 +88,9 @@ function Neg ()
 		parseFloat(Fcalc.ReadOut.value) * -1;
 }
 	
-
 function Percent () 
 {
 		Fcalc.ReadOut.value = 
 			(parseFloat(Fcalc.ReadOut.value) / 100) * 
-       	  	parseFloat(Currents);
-}
+			parseFloat(Currents);
+} 
